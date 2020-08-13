@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column justify-content-center vh-100">
+    <main class="container">
+
+        <section id="startPage" class="jumbotron text-center bg-light shadow-lg">
+
+            <h1 class="sm-display-1">JavaScript Quiz</h1>
+            <button id="startBtn" class="btn btn-dark btn-lg">Start Quiz</button>
+            <hr class="my-4">
+            <h2 id="viewScores" class="btn">View High Scores</h2>
+
+        </section>
+
+        <section id="quizPage" class="flex-column jumbotron bg-light shadow-lg">
+
+            <h2 id="question">To be filled dynamically with JS...</h2>
+            <button id="btnA" class="btn btn-outline-dark m-1">A</button>
+            <button id="btnB" class="btn btn-outline-dark m-1">B</button>
+            <button id="btnC" class="btn btn-outline-dark m-1">C</button>
+            <button id="btnD" class="btn btn-outline-dark m-1">D</button>
+            <hr class="w-100 my-4">
+            <section id="infoBoard" class="d-flex justify-content-between">
+                <h3>Time Left: <span id="timer">60</span></h3>
+                <h3 id="result">JS says...</h3>
+            </section>
+
+        </section>
+
+        <section id="endPage" class="flex-column align-items-center jumbotron bg-light shadow-lg">
+
+            <h1>Save Results?</h1>
+            <h2>Score: <span id="finalScore"></span></h2>
+            <div class="input-group input-group-lg my-3">
+                <input type="text" class="form-control" placeholder="Enter Initials" name="userInitials"
+                    id="userInitials">
+                <div class="input-group-append">
+                    <button id="saveBtn" class="btn btn-outline-secondary">Save Game</button>
+                </div>
+            </div>
+            <hr class="w-100 my-4">
+            <button id="restartBtn" class="btn btn-dark btn-lg">Restart</button>
+
+        </section>
+
+        <section id="scorePage" class="flex-column align-items-center jumbotron bg-light shadow-lg">
+
+            <h1>High Scores</h1>
+            <ul id="scoreList"></ul>
+            <hr class="w-100 my-4">
+            <button id="playAgain" class="btn btn-dark btn-lg">Restart</button>
+
+        </section>
+
+    </main>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

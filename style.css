@@ -1,0 +1,17 @@
+#quizPage {
+    display: none;
+}
+
+#endPage {
+    display: none;
+}
+
+#scorePage {
+    display: none;
+}
+
+#quizPage button:hover {
+    box-shadow: none !important;
+    background-color: transparent !important;
+
+}
